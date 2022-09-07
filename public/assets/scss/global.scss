@@ -1,0 +1,126 @@
+$dc_primary_blue: #32A5CD;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Inter-Black';
+    src: font-url('../fonts/Inter-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Bold';
+    src: font-url('../fonts/Inter-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-ExtraBold';
+    src: font-url('../fonts/Inter-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-ExtraLight';
+    src: font-url('../fonts/Inter-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Light';
+    src: font-url('../fonts/Inter-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Medium';
+    src: font-url('../fonts/Inter-Medium.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Regular';
+    src: font-url('../fonts/Inter-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
+    src: font-url('../fonts/Inter-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Inter-Thin';
+    src: font-url('../fonts/Inter-Thin.ttf') format('truetype');
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #EFF2F7;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #CDD5E6;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #979797;
+}
+
+nav{
+    align-items: center;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #C8DAFF;
+    border-top: 1px solid #C8DAFF;
+    display: flex;
+    height: 54px;
+    padding: 13px 20px;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    #header_search_form {
+        display: inline-block;
+        margin: 0px 32px 0px 79px;
+        position: relative;
+        #search_input {
+            background-color: #F2F6FF;
+            border-radius: 5px;
+            border: 1px solid #D4E1FA;
+            color: #A3AFC9;
+            font: 14px/17px Inter-Regular, tahoma, verdana, arial, sans-serif;
+            height: 30px;
+            padding: 10px 15px 10px 37px;
+            width: 340px;
+            &:focus {
+                background-color: #E3F8FF;
+                border: 1px solid $dc_primary_blue;
+                outline: 2px solid #c0e6f3;
+                &~.search_icon {
+                    background-position: -117px 0px !important;
+                }
+            }
+            &::-webkit-input-placeholder, &:-ms-input-placeholder, &::placeholder{ /*  */
+                /* for Edge, Internet Explorer 10-11, chrome */
+                color: #A3AFC9;
+            }
+        }
+        .search_icon {
+            background-image: url("https://cdn.datacompass.com/assets/images/interview-templates/admin/candidate_icon_sprite.svg");            
+            background-position: 0px 5px;
+            border: 0;
+            content: "";
+            display: inline-block;
+            height: 20px;
+            left: 12px;
+            position: absolute;
+            top: 44%;
+            transform: translateY(-50%);
+            width: 15px;
+        }
+    }
+}

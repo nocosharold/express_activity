@@ -1,0 +1,22 @@
+[
+    {
+        "id": 1,
+        "user_name": "Jhaver Gurtiza",
+        "company_json": [
+            {
+                "name": "Big Company",
+                "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, minus."
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "user_name": "Harold Nocos",
+        "company_json": [
+            {
+                "name": "Medium Company",
+                "description": "Quaerat earum amet assumenda obcaecati repellendus voluptate laboriosam ducimus."
+            }
+        ]
+    }
+]
